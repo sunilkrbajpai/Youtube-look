@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YouTube</title>
+
+    <script src="https://kit.fontawesome.com/198cd6dc1b.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/1384/1384060.svg" type="icon" sizes="16x16">
+
+    
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+
+</head>
+<body>
+
+    <header>
+        <div class="nav-left">
+            <div>
+                <i class="fas fa-bars"></i>
+            </div>
+            <div id="youtube-icon">
+                <a href="https://www.youtube.com/"><img src="https://image.flaticon.com/icons/svg/1384/1384060.svg"></a> <span style="font-family: 'Pathway Gothic One', sans-serif;">&nbsp;&nbsp;<b>YouTube</b><sup style="font-size: 12px;">IN</sup></span>
+            </div>
+        </div>
+                <div class="search-container">
+                        <form>
+                          <input type="text" placeholder="Search" name="search">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                </div>
+            
+        <div class="nav-right">
+            <div>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-plus plus"></i>
+            </div>
+            <div>
+                <i class="fas fa-th"></i>
+            </div>
+            <div>
+                <i class="fas fa-bell"></i>
+            </div>
+            <div id="profile-image">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="main-section">
+            <div class="video-wrapper">
+                <iframe width="800" height="480" src="https://www.youtube.com/embed/J---aiyznGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <div id="video-title"><b>Charlie Schmidt's Keyboard Cat! - THE ORIGINAL!</b></div>
+                <div id="stats-and-actions">
+                        <div id="stats" class="video-info">
+                            <span>60,960,725 views</span>
+                            <span><i class="fas fa-circle" style="font-size: 2px"></i></span>
+                            <span>Jun 8, 2007</span>
+                        </div>
+                        <div id="actions" class="video-info">
+                            <div id="likes">
+                                <i class="fas fa-thumbs-up"></i>
+                                <span>946K</span>
+                            </div>
+                            <div id="dislikes">                        
+                                <i class="fas fa-thumbs-down"></i>
+                                <span>17K</span>
+                            </div>
+                            <div id="share">
+                                <i class="fas fa-share"></i>
+                                <span>SHARE</span>
+                            </div>
+                            <div id="save">
+                                <i class="fas fa-bars"></i>
+                                <i class="fas fa-plus save"></i>
+                                <span>SAVE</span>
+                            </div>
+                            <div id="menu">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                        </div>
+                </div>
+                <div class="hr-line"></div>
+                <div id="video-description">
+                        <div id="title-bar">
+                            <img src="https://yt3.ggpht.com/ytc/AAUvwng3AWKgf4w7_NbqhCpByBoJhNTnadlMaactjyx5=s48-c-k-c0xffffffff-no-rj-mo">
+                            <div>
+                                <span style="color: black; font-weight: bold; font-size: 1.0rem">Keyboard Cat 2020</span>
+                                <span style="font-size: 0.8rem;margin-top:3px">243K subscribers</span>
+                            </div>
+                            <button id="subscribe-btn">SUBSCRIBE</button>
+                        </div>
+                        <div id="content">
+                            Today, Munchkin cats battle with the invisible wall compilation!
+                            <br><br>Welcome Munchkin, thanks for watching and hope you have a meowtastic day!<br><br>
+                            Check out other super fun cat videos here:<br><br>
+                            ------------------------------------------<br><br>
+                            @Kittisaurus<br>
+                            @Creamheroes<br>
+                            @KiSH-Log<br>
+                            @JunsKitchen<br>
+                            <br>
+                            ------------------------------------------<br><br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </div>
+                        <button id="show-more">
+                            SHOW MORE
+                        </button>
+                </div>
+                <div class="hr-line"></div>
+            </div>   
+            <h3 style="margin-left: 25px">112,586 Comments </h3>
+            <div id="comment-section"></div>         
+        </div>
+        <div id="aside-section">
+            <div id="aside-heading">
+                <b>Up next</b>
+                <span>
+                    <b>Autoplay</b>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                </span>
+            </div>
+            <div id="videolist"></div>
+        </div>
+    </main>
+
+    
+
+    <!-- Script -->
+    <script src="script.js"></script>
+
+</body>
+</html>
