@@ -5,13 +5,13 @@ var video = [
             "title": "Cats and Invisible Wall Compilation",
             "uploader": "Munchkin",
             "views": "17M views • 8 months ago",
-            "thumbnail": "https://i.ytimg.com/an_webp/EJS4hYNngto/mqdefault_6s.webp?du=3000&sqp=CKCOg_8F&rs=AOn4CLBWbHKr8fNNranuHxgUCPBTZ679cw"
+            "thumbnail": "https://img.youtube.com/vi/EJS4hYNngto/maxresdefault.jpg"
         },
         {
             "title": "Cute and Funny Cat Videos to Keep You Smiling! 🐱",
             "uploader": "Rufus",
             "views": "16.8M views • 8 months ago",
-            "thumbnail": "https://i.ytimg.com/an_webp/tpiyEe_CqB4/mqdefault_6s.webp?du=3000&sqp=CPyFg_8F&rs=AOn4CLCMAWkK9ycrzPyaSPWcsk2wS8xjcQ"
+            "thumbnail": "https://img.youtube.com/vi/tpiyEe_CqB4/maxresdefault.jpg"
         },
         {
             "title": "TypeScript Course for Beginners 2020 - Learn TypeScript from Scratch!",
@@ -41,7 +41,7 @@ var video = [
             "title": "Funny Cats Compilation (Most popular) Part 2",
             "uploader": "NoCat NoLife",
             "views": "4.6M . 4 years ago",
-            "thumbnail": "https://i.ytimg.com/an_webp/NsUWXo8M7UA/mqdefault_6s.webp?du=3000&sqp=CMCZg_8F&rs=AOn4CLD53f12LuVm2zd-jL5-3xBtkH3j0w"
+            "thumbnail": "https://img.youtube.com/vi/NsUWXo8M7UA/maxresdefault.jpg"
         },
         {
             "title": "Waiter! Bring me food!",
