@@ -11,24 +11,26 @@ header{
     position: fixed;
     width: 100vw;
     height: 60px;
+    z-index: 1;
     background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-#youtube-icon img{
+#logo img{
     height: 30px;
     width: 30px;
     border-radius: 10%;
 }
 
-#profile-image img{
+/* nav :right */
+
+#profile img{
     height: 40px;
     width: 40px;
     border-radius: 50%;
 }
-
 header div{
     display: flex;
     flex-direction: row;
@@ -38,7 +40,7 @@ header div{
     font-size: 20px;
     color: #616161;
 }
-.search-container button {
+.searchBox button {
     float: right;
     padding: 8px 20px;
     margin-right: 16px;
@@ -48,7 +50,7 @@ header div{
     border-left: none;
     cursor: pointer;
   }
-  .search-container button:hover {
+  .searchBox button:hover {
     background: rgb(225, 223, 223);
   }
   input{
@@ -72,7 +74,7 @@ input:focus {
     color: white;
 }
 
-/* BODY LAYOUT*/
+/* BODY */
 
 main{
     width: 100vw;
@@ -82,18 +84,16 @@ main{
     padding-top: 70px;
     box-sizing: border-box;
 }
-
 #main-section{
     width: 65%;
 }
-
 #aside-section{
     width: 35%;
 }
 
 /* BODY STYLES */
 
-.video-wrapper{
+.video-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,19 +101,16 @@ main{
     padding: 20px;
     margin:10px;
 }
-
 iframe{
     max-width: 100%;
     max-height: 450px;
     margin-bottom: 20px;
 }
-
 #video-title{
     width: 100%;
     font-size: 1.3rem;
 }
-
-#stats-and-actions{
+#about{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -121,10 +118,12 @@ iframe{
     width: 100%;
     margin: 20px 0;
 }
-#stats-and-actions i{
+#about i{
     font-size: 16px;
 }
-
+#actions div{
+    margin: 0 10px;
+}
 .video-info{
     display: flex;
     flex-direction: row;
@@ -141,42 +140,32 @@ iframe{
 #stats span{
     margin: 0 5px;
 }
-
-#actions div{
-    margin: 0 10px;
-}
-
 .video-info div span{
     margin: 0 5px;
 }
-
-#title-bar img{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
-
 .hr-line{
     width: 100%;
     border-bottom: 1px solid lightgrey;
     margin-bottom: 20px;
 }
-
-#title-bar{
+#title img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+#title{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
 }
-
-#title-bar div{
+#title div{
     flex-grow: 1;
     margin-left: 20px;
     display: flex;
     flex-direction: column;
     color: grey;
 }
-
 #subscribe-btn{
     background-color: #cc0000;
     padding: 10px 15px;
@@ -185,14 +174,12 @@ iframe{
     border-radius: 3px;
     font-size: 0.9rem;
 }
-
 #content{
     margin-bottom: 20px;
     height: 120px;
     overflow: hidden;
     font-size: 0.9rem;
 }
-
 #show-more{
     border: none;
     color: grey;
@@ -200,39 +187,36 @@ iframe{
     font-size: 0.8rem;
     margin-bottom: 20px;
 }
-
 button:hover{
     cursor: pointer;
 }
-
 button:focus{
     outline: none;
 }
 
 /* ASIDE SECTION */
 
-#aside-heading{
+#aside-text{
     font-size: 1.0rem;
+    display: flex;
+    flex: row;
+    padding-right: 40px;
+    justify-content: space-between;
 }
-
 .card{
     height: 100px;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     margin: 10px 0;
 }
-
-.cardImg{
+.cardImage{
     height: 100px;
     width: 40%;
 }
-
-.cardMenu{
-    height: 100%;
-    width: 10%;
+.right-hr{
+    width: 90% !important;
 }
-
 .cardInfo{
     height: 100%;
     flex-grow: 1;
@@ -240,45 +224,38 @@ button:focus{
     flex-direction: column;
     padding: 10px;   
     font-size: 0.8rem;
- 
 }
-
 .cardTitle{
     font-size: 0.9rem;
     font-weight: 900;
     margin-bottom: 10px;
 }
-
-.uploader, .views{
+.channel-name, .moreInfo{
     color: grey;
 }
 
 /* COMMENTS SECTION */
+
 .commentCard{
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin: 20px 0; 
     padding: 20px;
 }
-
-.commentImg{
+.commentImage{
     height: 40px;
     width: 40px;
     border-radius: 50%;
 }
-
-.commentInfo{
+.commentText{
     padding: 0 10px;
 }
-
 .actions{
     display: flex;
     flex-direction: row;
     color: grey;
     margin-top: 5px;
 }
-
 .actions div{
     margin-right: 10px;
 }
@@ -286,24 +263,18 @@ button:focus{
     margin: 10px;
     font-size: 0.9rem;
 }
-#aside-heading{
-    display: flex;
-    flex: row;
-    padding-right: 40px;
-    justify-content: space-between;
-}
-/* toggle switch */
+
+/* autoplay toggle switch */
+
 .switch {
     position: relative;
     display: inline-block;
     width: 50px;
     height: 23px;
   }
-  
   .switch input { 
       display: none;
   }
-  
   .slider {
     position: absolute;
     cursor: pointer;
@@ -312,12 +283,11 @@ button:focus{
     right: 0;
     bottom: 0;
     background-color: white;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 1s;
+    transition: 1s;
     border-radius: 25px;
     border:2px solid #cccccc;
   }
-  
   .slider:before {
     position: absolute;
     content: "";
@@ -326,16 +296,14 @@ button:focus{
     left: 4px;
     bottom: 2px;
     background-color: white;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 1s;
+    transition: 1s;
     border-radius: 50%;
     border:2px solid #cccccc;
   }
-  
   input:checked + .slider {
     border: 2px solid #065fd5;
   }
-  
   input:checked + .slider:before {
     -webkit-transform: translateX(20px);
     -ms-transform: translateX(20px);
@@ -345,7 +313,6 @@ button:focus{
   }
 
 /* MEDIA QUERIES */
-
 
 @media screen and (max-width: 992px){
     main{
@@ -363,33 +330,29 @@ button:focus{
         width: 100%;
         padding: 25px;
     }
-    
 }
-
 @media screen and (max-width: 786px){
-    #stats-and-actions{
+    #about{
         flex-direction: column;
         align-items: flex-start;
     }
     #actions{
         margin-top: 20px;
     }
-    .video-wrapper iframe{
+    .video-container iframe{
         height: 50vw !important;
        }
     header div{
         margin: 10px;
     }
 }
-
 @media screen and (max-width: 576px){
-    #stats-and-actions{
+    #about{
         flex-direction: column;
     }
-    #youtube-icon span{
-display: none;
+    #logo span{
+        display: none;
     }
-  
 }
 @media screen and (max-width: 1100px) {
     input{
@@ -400,7 +363,7 @@ display: none;
       input{
           display: none;
       }
-      .search-container button {
+      .searchBox button {
           display: none;
       }
   }
